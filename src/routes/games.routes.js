@@ -5,7 +5,7 @@ import { gameSchema } from "../schemas/games.schema.js";
 
 const gameRoutes = Router();
 
-gameRoutes.get("/games", confirmSchema(gameSchema), listGames);
+gameRoutes.get("/games", listGames);
 gameRoutes.post("/games", confirmSchema(gameSchema), addGames);
 
 export default gameRoutes;
