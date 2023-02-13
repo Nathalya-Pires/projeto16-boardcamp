@@ -19,6 +19,8 @@ export async function addGames(req, res) {
       [name, image, stockTotal, pricePerDay]
     );
 
+      
+
     console.log(insertGames.rows);
 
     res.sendStatus(201);
